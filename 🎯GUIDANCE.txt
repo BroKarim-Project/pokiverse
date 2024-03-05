@@ -1,0 +1,17 @@
+
+- Susun dulu folder kayak folder-folder sebelumnya
+
+- Hanya ada 2 section, hero dan list pokemon
+
+- Buat dulu hero yg ada di hyperui, biar fokus ama pokemon api
+  - Hero source : pengen konsep gini
+   - https://dribbble.com/shots/19359604-Lost-Toys-NFT-website
+
+- Referensi code : 
+    versi react
+    - https://github.com/piyushshah69/pokemon-api-react-tailwind/blob/master/src/routes/CustomRoutes.jsx 
+    btw dia pake axios, kita pake callback aj yg ada di tcc
+
+    Itu blm ada desk, ni ada tpi html-js
+    https://youtu.be/56VjdqcdakQ?si=yixB6HnmCU_nM8-V
+
