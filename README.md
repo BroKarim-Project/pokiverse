@@ -1,8 +1,15 @@
-# React + Vite
+<h1 align="center">Poki Verse : Pokemon App</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Screenshot
+<img width="720" alt="image" src="https://github.com/BroKarim-Project/pokimon/assets/146515339/85dca224-adf8-48d1-9c4c-7c779170ae5c">
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Development Setup
+Clone the repository and run the following commands:
+```
+npm install
+npm run dev
+```
+
+Made with 💓 By BroKarim
+
