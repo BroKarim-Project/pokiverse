@@ -55,7 +55,7 @@ export default function PokemonPage() {
 
   return (
     <>
-      <div className=" bg-[url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]  bg-contain bg-black bg-center  p-8">
+      <div className="w-full h-auto bg-[url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-full  bg-contain bg-black bg-center  p-8">
         <div className="w-full bg-black/60 rounded-md mx-auto px-4 sm:px-6 lg:px-8">
           <Link to={'/'} className="button block relative w-[56px] h-[56px] m-0 overflow-hidden outline-none bg-transparent cursor-pointer border-none text-white bg-slate-700 py-1 px-3 mb-2 rounded">
             <div class="button-box">
@@ -73,7 +73,7 @@ export default function PokemonPage() {
           </Link>
 
           {isLoading ? (
-            <p className="text-center text-black text-lg">Loading, Please wait...</p>
+            <p className="text-center w-full h-screen text-white text-lg">Loading, Please wait...</p>
           ) : (
             <div className="flex flex-col md:flex-row my-2 -mx-4">
               <div className="md:flex-1 px-4">
