@@ -31,71 +31,40 @@ Atur state nextURL dan previousUrl dengan nilai yang diperoleh dari respons API
 
 
 
- <ul>
- <li className="text-gray-600 dark:text-gray-300 text-sm mb-4">HP: {pokemon.stats.hp}</li>
-                <li className="text-gray-600 dark:text-gray-300 text-sm mb-4">Attack: {pokemon.stats.attack}</li>
-                <li className="text-gray-600 dark:text-gray-300 text-sm mb-4">Defense: {pokemon.stats.defense}</li>
-                <li className="text-gray-600 dark:text-gray-300 text-sm mb-4">Speed: {pokemon.stats.speed}</li>
-                
-              </ul>
-
-{pokemon.stats ? (
-    pokemon.stats.map((stat, index) => (
-      <li key={index} className="text-gray-600 dark:text-gray-300 text-sm mb-4">
-        {stat.name}: {stat.value}
-      </li>
-    ))
-  )
-
-
-{pokemon.stats ? (
-                  Object.keys(pokemon.stats).map((statName) => (
-                    <li key={statName} className="text-gray-600 dark:text-gray-300 text-sm mb-4">
-                      {statName}: {pokemon.stats[statName]}
-                    </li>
-                  ))
-                )
 
 
 
 
-
-  - Hero source : pengen konsep gini
-   - https://dribbble.com/shots/19359604-Lost-Toys-NFT-website
-   - https://dribbble.com/shots/20550986-De-nfts-NFTs-Landing-Page
-   - https://dribbble.com/shots/17518296-Karaku-NFT-Website-Concept ⭐⭐⭐
-   - 
 
 TAMBAH POPULAR POKEMON => 4 card aja
 https://www.behance.net/gallery/192753259/NFT-Landing-Page?tracking_source=search_projects|nft+website&l=44
 
-Kayaknya yg dikasih bintang itu bagus, 
-Tema : Pokemon NFT example
-Layout : Hero, Text berjalan, pokemon card,. footer
-
-Pokemon card : 
-    - Buat bg gradien dibelakang gambar pokemon, jangn lupa rounder
-    - Dibawahnya nama , ...
-
-
-Baclground : 
-- https://www.figma.com/file/FZm5R0SsHp2TWigaBWFghv/Space-World-Portfolio-Template-Community?type=design&is-community-duplicate=1&fuid=
-
-- https://www.figma.com/file/NZaDTvNrylvNDneHKi8KhB/%E2%9C%A8-CRYPTO-SPACE-ANIMATION-(Community)?type=design&node-id=102-41&mode=design&t=Wwd1CRqScZXvIso2-0
 
 
 
 
 
-- Referensi code : 
-    versi react
+
+
+🎯 Referensi code : 
+    ~ versi react
     - https://github.com/piyushshah69/pokemon-api-react-tailwind/blob/master/src/routes/CustomRoutes.jsx 
     btw dia pake axios, kita pake callback aj yg ada di tcc
 
     Itu blm ada desk, ni ada tpi html-js
     https://youtu.be/56VjdqcdakQ?si=yixB6HnmCU_nM8-V
 
+    ~~ animasi bintang di home
+    https://codepen.io/stack-findover/pen/eYWPwPV?editors=1100
 
-PENJELASA
-- DI panggil semua cardnya di pokemonApp
-- di dalam pokemonApp bakal ada pokemon dimana kita fetch data
+    ~~ button animation di PokemonPage
+    ui.verse
+
+    ~~ layout pokemonPage
+    https://tailwindflex.com/@jaxstone/product-page-2
+
+🎯 Baclground : 
+- https://www.figma.com/file/FZm5R0SsHp2TWigaBWFghv/Space-World-Portfolio-Template-Community?type=design&is-community-duplicate=1&fuid=
+
+- https://www.figma.com/file/NZaDTvNrylvNDneHKi8KhB/%E2%9C%A8-CRYPTO-SPACE-ANIMATION-(Community)?type=design&node-id=102-41&mode=design&t=Wwd1CRqScZXvIso2-0
+

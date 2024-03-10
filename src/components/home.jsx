@@ -11,7 +11,7 @@ export default function Home() {
         style={{
           width: '100%',
           height: '100vh',
-          backgroundImage: `url('/bg.png')`, // Gunakan URL atau path gambar background
+          backgroundImage: `url('/bg.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -22,7 +22,6 @@ export default function Home() {
           <div className="layer"></div>
           <div className="layer"></div>
         </div>{' '}
-        {/* <img src="/bg.png" alt="Hero image" className="opacity-60 object-cover" /> */}
         <div className="flex flex-col gap-2 justify-center items-center px-3">
           <h1 className=" text-center text-3xl md:text-5xl text-white font-bold drop-shadow-lg">
             WELCOME TO <br />

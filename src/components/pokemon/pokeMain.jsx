@@ -1,4 +1,3 @@
-// import Pokemons from '../Pokemons/pokemons'
 import Pokemons from './pokemon';
 
 const PokeApp = () => {

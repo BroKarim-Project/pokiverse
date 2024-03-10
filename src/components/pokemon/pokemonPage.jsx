@@ -133,24 +133,3 @@ export default function PokemonPage() {
   );
 }
 
-/*
-<div className="bg-zinc-100 w-5/6 mx-auto max-w-2xl rounded-xl flex flex-col md:flex-row gap-10 md:gap-15 p-6 justify-center items-center">
-                <img className="w-4/5 md:w-full m-auto" src={pokemon.imageUrl} />
-              </div>
-
-<div className="flex flex-col gap-4 md:gap-8 md:h-4/6">
-                  <div className="flex items-center gap-10">
-                    <h1 className="text-black capitalize text-3xl tracking-widest font-mono">{pokemon.name}</h1>
-                    <p className="capitalize bg-slate-800 text-white py-0.5 px-2">{pokemon.types}</p>
-                  </div>
-
-                  <div className="flex items-center gap-10">
-                    <p className="capitalize text-lg">
-                      Weight: <span className="px-2 py-1 bg-slate-800 text-white">{pokemon.weight}</span>
-                    </p>
-                    <p className="capitalize text-lg">
-                      Height: <span className="px-2 py-1 bg-slate-800 text-white">{pokemon.height}</span>
-                    </p>
-                  </div>
-                </div>
-*/

@@ -37,13 +37,3 @@ const PokemonCard = ({ pokemonName, pokemonImage, pokemonType, id }) => {
 };
 
 export default PokemonCard;
-// #E8BDF9
-
-/*
- <Link to={`/pokemon/${id}`}>
-      <div className="bg-black flex flex-col justify-center items-center gap-4 rounded-lg hover:bg-slate-200 transition cursor-pointer h-52">
-        <p className="text-2xl text-center capitalize">{pokemonName}</p>
-        <img className="h-3/5" src={pokemonImage} />
-      </div>
-    </Link>
-*/
