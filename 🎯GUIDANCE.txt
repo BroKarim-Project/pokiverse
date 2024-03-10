@@ -1,11 +1,91 @@
+🔥pokeMain.jsx
+- Semua card akan dipanggil di Pokemons, dan Pokemons akan di pangi di sini
 
-- Susun dulu folder kayak folder-folder sebelumnya
+🔥pokemons.jsx
+=> Disini kita akan fetch data dari pokeApi sehingga nantinya kita bisa menampilkan nama dan gambar dari pokemon
 
-- Hanya ada 2 section, hero dan list pokemon
+1. fetch data
+- Mengambil data dari API menggunkana fetch, ketika kita fetch data kita akan mendaapt respon HTTP dari server dan kita simpan di variable response
+- The awaited response object holds the response from the server, but it's still in JSON format
+      
+2. convert response to js object
+- kita konveris respons menjadi objek js, note sekalipun nama methjod ini .json() resultnya buaan JSON namun kiya terima inpu JSON dan konvert ke js objek
 
-- Buat dulu hero yg ada di hyperui, biar fokus ama pokemon api
+3. Set State for next & previous url
+Atur state nextURL dan previousUrl dengan nilai yang diperoleh dari respons API
+
+4. creates an array of promises for detailed Pokemon information based on URLs
+- selanjutany kita membuat array baru bernaam resultPromis, dari mana tahu dia array? karena ada map function
+- selanjtnya kita asumsikan data memilki property bernama results, kita akan melakukan iterasi dari setiap elemmen pokemon yang terdapat di data.results
+- selanjutnya kita membuat callback function, di dalamnya kita melkaukan fetch lagi untuk mengambil url yang ada di pokemon
+- seperti biaasa setelah kita fetch url itu kita harus konveris lagi kedalam objek js menggunakn method .json
+      
+5. Save the array in pokemonData
+- promise bermkana janji, ibarat kata kita pesan nasi pada pelayan, secara tidak langsung pelayan itu akan berjanji akan mengantar jika ada atau menolak jika menu taka ada
+- kode ini berguna untuk menunggu detail pokemon di fetch
+ setelah semua berhasil di dapat )fetch) itu akan di simpan di pokemonData
+- sevenarnya kita dapat langsung menggunakna data di resultPromises tanpa melakukan promise.all, namun untuk lebih memastikan agar semua data benar2 di fetch, lbh mudah menagangi kesalah karena ada banyak pokemon dan kit tak tahu mana iterasi yang bermasalash
+
+
+
+
+
+
+ <ul>
+ <li className="text-gray-600 dark:text-gray-300 text-sm mb-4">HP: {pokemon.stats.hp}</li>
+                <li className="text-gray-600 dark:text-gray-300 text-sm mb-4">Attack: {pokemon.stats.attack}</li>
+                <li className="text-gray-600 dark:text-gray-300 text-sm mb-4">Defense: {pokemon.stats.defense}</li>
+                <li className="text-gray-600 dark:text-gray-300 text-sm mb-4">Speed: {pokemon.stats.speed}</li>
+                
+              </ul>
+
+{pokemon.stats ? (
+    pokemon.stats.map((stat, index) => (
+      <li key={index} className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+        {stat.name}: {stat.value}
+      </li>
+    ))
+  )
+
+
+{pokemon.stats ? (
+                  Object.keys(pokemon.stats).map((statName) => (
+                    <li key={statName} className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                      {statName}: {pokemon.stats[statName]}
+                    </li>
+                  ))
+                )
+
+
+
+
+
   - Hero source : pengen konsep gini
    - https://dribbble.com/shots/19359604-Lost-Toys-NFT-website
+   - https://dribbble.com/shots/20550986-De-nfts-NFTs-Landing-Page
+   - https://dribbble.com/shots/17518296-Karaku-NFT-Website-Concept ⭐⭐⭐
+   - 
+
+TAMBAH POPULAR POKEMON => 4 card aja
+https://www.behance.net/gallery/192753259/NFT-Landing-Page?tracking_source=search_projects|nft+website&l=44
+
+Kayaknya yg dikasih bintang itu bagus, 
+Tema : Pokemon NFT example
+Layout : Hero, Text berjalan, pokemon card,. footer
+
+Pokemon card : 
+    - Buat bg gradien dibelakang gambar pokemon, jangn lupa rounder
+    - Dibawahnya nama , ...
+
+
+Baclground : 
+- https://www.figma.com/file/FZm5R0SsHp2TWigaBWFghv/Space-World-Portfolio-Template-Community?type=design&is-community-duplicate=1&fuid=
+
+- https://www.figma.com/file/NZaDTvNrylvNDneHKi8KhB/%E2%9C%A8-CRYPTO-SPACE-ANIMATION-(Community)?type=design&node-id=102-41&mode=design&t=Wwd1CRqScZXvIso2-0
+
+
+
+
 
 - Referensi code : 
     versi react
@@ -15,3 +95,7 @@
     Itu blm ada desk, ni ada tpi html-js
     https://youtu.be/56VjdqcdakQ?si=yixB6HnmCU_nM8-V
 
+
+PENJELASA
+- DI panggil semua cardnya di pokemonApp
+- di dalam pokemonApp bakal ada pokemon dimana kita fetch data

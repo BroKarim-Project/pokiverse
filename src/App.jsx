@@ -1,7 +1,15 @@
+import Home from './components/home';
+import Header from './components/header';
+import CustomRoute from './routes/custom-routes';
+
 function App() {
   return (
     <>
-      <h1>Hellow dunia</h1>
+      <div className="relative">
+        {/* <Header /> */}
+        {/* <Home /> */}
+        <CustomRoute />
+      </div>
     </>
   );
 }
